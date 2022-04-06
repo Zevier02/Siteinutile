@@ -19,7 +19,17 @@
     <button onclick="window.location.href = 'https://noammouriescameron.wixsite.com/my-site'">Site sympa ici</button>
     <p>ㅤ</p>
     <p>ㅤ</p>
-    <input id="jaune" placeholder="Qu'est-ce qui est jaune et qui attends ?" size="30">
-    <p>(nan j'déconne ça fait rien)</p>
+    <input type="text" id="jaune" class="jaune" placeholder="Qu'est-ce qui est jaune et qui attends ? (indice : c'est jonatan)" size="50">
+    <button onclick="getValue();">Clique ici pour valider</button>
+    <img height="50" width="50" onclick="window.location.href = 'https://zevier02.github.io/hacktroll/'" src="https://i.gifer.com/Vwy4.gif">
+    <script>function getValue() {
+        var input = document.getElementById("jaune").value;
+        if(input == "jonatan"){
+            alert("ta pas beaucoup d'humour")
+        }
+        else {
+            alert("bah nan c'etait jonatan");
+        }
+    }</script>
 </body>
 </html>
