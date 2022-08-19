@@ -32,17 +32,9 @@
             document.getElementById('reponse').innerHTML = input + " (c'est pas ça c'est jonatan)";
         }
     }
-
-    </script>
-
-    <p>Ta réponse : <span id="reponse"></span>.</p>
-    <p>ㅤ</p>
-    <p>ㅤ</p>
-    <p>Voici un pierre feuille ciseaux :</p>
     
-    <script>
-        var scorebot;
-        var score;
+    var scorebot;
+    var score;
 
     function Stoneplay() {
         var bot = Maths.floor(Maths.random() * 3 + 1);
@@ -98,6 +90,11 @@
         document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot + ".";
     }
     </script>
+
+    <p>Ta réponse : <span id="reponse"></span>.</p>
+    <p>ㅤ</p>
+    <p>ㅤ</p>
+    <p>Voici un pierre feuille ciseaux :</p>
     
     <g><h3>Score : <span id="score"></span></h3></g>
     <button id="Stone" onclick="Stoneplay()">Pierre</button>
