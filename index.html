@@ -21,13 +21,22 @@
     <p>ㅤ</p>
     <input onkeyup="getValue()" type="text" id="jaune" class="jaune" placeholder="Qu'est-ce qui est jaune et qui attends ? (indice : c'est jonatan)" size="50">
     <p onclick="window.location.href = 'https://zevier02.github.io/hacktroll'">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+    <script>function getValue() {
+        var input = document.getElementById("jaune").value;
 
+        if(input == "jonatan"){
+            document.getElementById('reponse').innerHTML = input + " (gg tu as trouvé)";
+        }
+        else {
+            document.getElementById('reponse').innerHTML = input + " (c'est pas ça c'est jonatan)";
+        }
+    }
+    </script>
     <p>Ta réponse : <span id="reponse"></span>.</p>
     <p>ㅤ</p>
     <p>ㅤ</p>
     <p>Voici un pierre feuille ciseaux :</p>
-        <script>
-    function Play(what) {
+        <script>function Play(what) {
         var bot = Maths.floor(Maths.random() * 3);
         var scorebot = 0;
         var score = 0;
