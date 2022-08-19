@@ -32,13 +32,17 @@
             document.getElementById('reponse').innerHTML = input + " (c'est pas ça c'est jonatan)";
         }
     }
-    
-    var scorebot = 0;
-    var score = 0;
+    </script>
 
+    <p>Ta réponse : <span id="reponse"></span>.</p>
+    <p>ㅤ</p>
+    <p>ㅤ</p>
+    <p>Voici un pierre feuille ciseaux :</p>
+    <script>
     function Play(what) {
         var bot = Maths.floor(Maths.random() * 3 + 1);
-
+        var scorebot = 0;
+        var score = 0;
 
         if(what == 1){
             if(bot == 1){
@@ -83,12 +87,6 @@
         
     }
     </script>
-
-    <p>Ta réponse : <span id="reponse"></span>.</p>
-    <p>ㅤ</p>
-    <p>ㅤ</p>
-    <p>Voici un pierre feuille ciseaux :</p>
-    
     <g><h3>Score : <span id="score"></span></h3></g>
     <button id="Stone" onclick="Play(1)">Pierre</button>
     <button id="Paper" onclick="Play(2)">Papier</button>
