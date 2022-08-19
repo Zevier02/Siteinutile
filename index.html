@@ -36,58 +36,51 @@
     var scorebot;
     var score;
 
-    function Stoneplay() {
+    function Play(what) {
         var bot = Maths.floor(Maths.random() * 3 + 1);
 
-        if(bot == 1){
+
+        if(what == 1){
+            if(bot == 1){
             document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
-        }
-        else if(bot == 2){
-            scorebot = scorebot + 1;
+            }
+            else if(bot == 2){
+            scorebot = scorebot + 1 * 1;
             document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
-        }
-        else if(bot == 3){
-            score = score + 1;
-            document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
-        }
-
-        document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot + ".";
-    }
-
-    function Paperplay() {
-        var bot = Maths.floor(Maths.random() * 3 + 1);
-
-        if(bot == 1){
-            score = score + 1;
-            document.getElementById('robot').innerHTML = "Toi : Papier; Robot : Pierre, victoire."
-        }
-        else if(bot == 2){
-            document.getElementById('robot').innerHTML = "Toi : Papier; Robot : Papier, égalité."
-        }
-        else if(bot == 3){
-            scorebot = scorebot + 1;
-            document.getElementById('robot').innerHTML = "Toi : Papier; Robot : Ciseaux, défaite."
+            }
+            else if(bot == 3){
+                score = score + 1 * 1;
+                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
+            }
         }
 
-        document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot + ".";
-    }
+        if(what == 2){
+            if(bot == 2){
+            document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
+            }
+            else if(bot == 3){
+            scorebot = scorebot + 1 * 1;
+            document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
+            }
+            else if(bot == 1){
+                score = score + 1 * 1;
+                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
+            }
+        if(what == 3){
+            if(bot == 3){
+            document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
+            }
+            else if(bot == 1){
+            scorebot = scorebot + 1 * 1;
+            document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
+            }
+            else if(bot == 2){
+                score = score + 1 * 1;
+                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
+            }
 
-    function Shearsplay() {
-        var bot = Maths.floor(Maths.random() * 3 + 1);
-
-        if(bot == 1){
-            scorebot = scorebot + 1;
-            document.getElementById('robot').innerHTML = "Toi : Ciseaux; Robot : Pierre, défaite."
-        }
-        else if(bot == 2){
-            score = score + 1;
-            document.getElementById('robot').innerHTML = "Toi : Ciseaux; Robot : Papier, victoire."
-        }
-        else if(bot == 3){
-            document.getElementById('robot').innerHTML = "Toi : Ciseaux; Robot : Ciseaux, égalité."
-        }
-
-        document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot + ".";
+        document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot;
+        
     }
     </script>
 
@@ -97,9 +90,9 @@
     <p>Voici un pierre feuille ciseaux :</p>
     
     <g><h3>Score : <span id="score"></span></h3></g>
-    <button id="Stone" onclick="Stoneplay()">Pierre</button>
-    <button id="Paper" onclick="Paperplay()">Papier</button>
-    <button id="Shears" onclick="Shearsplay()">Ciseaux</button>
+    <button id="Stone" onclick="Play(1)">Pierre</button>
+    <button id="Paper" onclick="Play(2)">Papier</button>
+    <button id="Shears" onclick="Play(3)">Ciseaux</button>
     <p>Jeu : <span id="robot"></span></p>
    
 </body>
