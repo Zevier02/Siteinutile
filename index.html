@@ -39,12 +39,7 @@
     <p>ㅤ</p>
     <p>ㅤ</p>
     <p>Voici un pierre feuille ciseaux :</p>
-    <g><h3>Score : <span id="score"></span></h3></g>
-    <button id="Stone" onclick="Stoneplay()">Pierre</button>
-    <button id="Paper" onclick="Paperplay()">Papier</button>
-    <button id="Shears" onclick="Shearsplay()">Ciseaux</button>
-    <p>Jeu : <span id="robot"></span></p>
-
+    
     <script>
         var scorebot;
         var score;
@@ -101,6 +96,14 @@
         }
 
         document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot + ".";
-    }</script>
+    }
+    </script>
+    
+    <g><h3>Score : <span id="score"></span></h3></g>
+    <button id="Stone" onclick="Stoneplay()">Pierre</button>
+    <button id="Paper" onclick="Paperplay()">Papier</button>
+    <button id="Shears" onclick="Shearsplay()">Ciseaux</button>
+    <p>Jeu : <span id="robot"></span></p>
+   
 </body>
 </html>
