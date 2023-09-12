@@ -21,69 +21,12 @@
     <p>ㅤ</p>
     <input onkeyup="getValue()" type="text" id="jaune" class="jaune" placeholder="Qu'est-ce qui est jaune et qui attends ? (indice : c'est jonatan)" size="50">
     <p onclick="window.location.href = 'https://zevier02.github.io/hacktroll'">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
-    <script>function getValue() {
-        var input = document.getElementById("jaune").value;
-
-        if(input == "jonatan"){
-            document.getElementById('reponse').innerHTML = input + " (gg tu as trouvé)";
-        }
-        else {
-            document.getElementById('reponse').innerHTML = input + " (c'est pas ça c'est jonatan)";
-        }
-    }
-    </script>
+    <script src="scripts/jonatan.js"></script>
     <p>Ta réponse : <span id="reponse"></span>.</p>
     <p>ㅤ</p>
     <p>ㅤ</p>
     <p>Voici un pierre feuille ciseaux :</p>
-        <script>
-        var scorebot = 0;
-        var score = 0;
-        function Play(what) {
-        var bot = Math.floor(Math.random() * 3);
-        if(what == 1){
-            if(bot == 0){
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
-            }
-            else if(bot == 1){
-                scorebot = scorebot + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
-            }
-            else if(bot == 2){
-                score = score + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
-            }
-        }
-
-        if(what == 2){
-            if(bot == 1){
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
-            }
-            else if(bot == 2){
-                scorebot = scorebot + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
-            }
-            else if(bot == 0){
-                score = score + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
-            }
-        }
-        if(what == 3){
-            if(bot == 2){
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Pierre, égalité."
-            }
-            else if(bot == 0){
-                scorebot = scorebot + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Papier, défaite."
-            }
-            else if(bot == 1){
-                score = score + 1 * 1;
-                document.getElementById('robot').innerHTML = "Toi : Pierre; Robot : Ciseaux, victoire."
-            }
-        }
-        document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot;
-    }
-    </script>
+        <script src="scripts/shifumi.js"></script>
     <g><h3>Score : <span id="score"></span></h3></g>
     <button id="Stone" onclick="Play(1)">Pierre</button>
     <button id="Paper" onclick="Play(2)">Papier</button>
