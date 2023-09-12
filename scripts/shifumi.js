@@ -1,5 +1,6 @@
 var scorebot = 0;
 var score = 0;
+var parties = 0;
 function Play(what) {
 var bot = Math.floor(Math.random() * 3);
 if(what == 1){
@@ -43,4 +44,8 @@ if(what == 3){
     }
 }
 document.getElementById('score').innerHTML = "Toi : " + score + "; Robot : " + scorebot;
+parties += 1;
+if(parties == 100){
+    alert("Tu n'as pas quelque chose de mieux à faire que de faire 100 parties ?")
+}
 }
