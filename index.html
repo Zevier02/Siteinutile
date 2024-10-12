@@ -9,23 +9,24 @@
     <title>Site Inutile</title>
     <script>console.log("T'utilises inspecter sérieux ?");console.log("Si tu veux ton score dans le site c'est la variable \"score\" que tu peux modifier avec \n\"score = 100000;\"\n et la variable \"scorebot\" pour le robot.")</script>
 </head>
-<body>
+<body">
     <h1>Bienvenue sur le site inutile !</h1>
-    <p>ㅤ</p>
+    <div class="coloration"><input type="checkbox" id="color" name="color" checked/><label for="color">Fond multicolore</label></div>
+    <script src="scripts/bgcolor.js"></script>
     <h2>Ce site sert totalement a rien...</h2>
     <h3>Mais tu peux rester si tu veux.</h3>
     <h4>Clique en dessous</h4>
     <img  height="350" width="700" onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'" src="images/inutile.png">
-    <p>ㅤ</p>
+    <br>
     <button onclick="window.location.href = 'https://noammouriescameron.wixsite.com/my-site'">Site sympa ici</button>
-    <p>ㅤ</p>
-    <p>ㅤ</p>
+    <br>
+    <br>
     <input onkeyup="getValue()" type="text" id="jaune" class="jaune" placeholder="Qu'est-ce qui est jaune et qui attends ? (indice : c'est jonatan)" size="50">
     <p onclick="window.location.href = 'https://zevier02.github.io/hacktroll'">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
     <script src="scripts/jonatan.js"></script>
     <p>Ta réponse : <span id="reponse"></span>.</p>
-    <p>ㅤ</p>
-    <p>ㅤ</p>
+    <br>
+    <br>
     <h2 id="voiciunpfc">Voici un pierre feuille ciseaux :</h2>
         <script src="scripts/shifumi.js"></script>
     <g><h3 id="sccorre">Score : <span id="score">Toi : 0; Robot : 0</span></h3></g>
@@ -35,6 +36,10 @@
     <button id="Shears" onclick="Play(3)">Ciseaux</button>
     </div>
     <p id="scorre">Jeu : <span id="robot">Pas encore de parties jouées.</span></p>
-    <img src="https://02ip.ru/1v4b95">
+    <br><br><br>
+    <div id="clicker"><h2>Voici un jeu idle clicker :</h2></div>
+    <h3>Z : <span id="clickernb">0</span> (+<span id="clickernbs">0</span>/s)</h3>
+    <div id="clicker"><img src="images/Pdp v2.png" height="140px" width="140px" onclick="Clicker()"></div>
+    <script src="scripts/clicker.js"></script>
 </body>
 </html>

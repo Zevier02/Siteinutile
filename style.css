@@ -1,3 +1,15 @@
+#clicker{
+    text-align: center;
+}
+
+.coloration{
+    position: sticky;
+    display: flex;
+    justify-content: end;
+    top: 10px;
+    font-family: sans-serif;
+}
+
 h1
 {
     text-align: center;
@@ -33,10 +45,6 @@ button
 input
 {
     font-family: sans-serif;
-}
-
-body{
-    background-image: url(https://i.gifer.com/Vwy4.gif);
 }
 
 c
