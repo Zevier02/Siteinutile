@@ -1,3 +1,69 @@
+#shopt{
+    border: 4mm ridge;
+}
+
+#dc, #escl{
+    color: white;
+}
+
+#clickerb{
+    text-align: center;
+}
+
+#escl{
+    background: url('images/Pdp V2 Z.png');
+    height:50px;
+    width: 50px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#esclcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dccontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dc{
+    background: url('images/mouse.png');
+    height:50px;
+    width: 50px;
+}
+
+#clickerbutton{
+    background: url('images/Pdp v2.png');
+    height:140px;
+    width:140px;
+}
+
+#boutik{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#shop{
+    display: flex;
+    flex-direction: row;
+}
+
+#buildings{
+    margin-right: auto;
+    border: 2mm ridge;
+}
+
+#upgrades{
+    margin-left: auto;
+    border: 2mm ridge;
+}
+
 #clicker{
     text-align: center;
 }
@@ -7,44 +73,16 @@
     display: flex;
     justify-content: end;
     top: 10px;
-    font-family: sans-serif;
 }
 
 h1
 {
     text-align: center;
-    font-family: sans-serif;
-}
-
-h2
-{
-    font-family: sans-serif;
-}
-
-p
-{
-    font-family: sans-serif;
-}
-
-h3
-{
-    font-family: sans-serif;
-}
-
-h4
-{
-    font-family: sans-serif;
 }
 
 button
 {
-    font-family: sans-serif;
     border: 0px;
-}
-
-input
-{
-    font-family: sans-serif;
 }
 
 c
@@ -89,8 +127,4 @@ d
 
 .boxpfc {
     text-align: center;
-}
-
-a{
-font-family: sans-serif;
 }

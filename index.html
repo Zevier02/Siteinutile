@@ -11,8 +11,10 @@
 </head>
 <body">
     <h1>Bienvenue sur le site inutile !</h1>
-    <div class="coloration"><input type="checkbox" id="color" name="color" checked/><label for="color">Fond multicolore</label></div>
-    <script src="scripts/bgcolor.js"></script>
+    <div class="coloration">
+        <input type="checkbox" id="color" name="color" checked/>
+        <label for="color">Fond multicolore</label>
+    </div>
     <h2>Ce site sert totalement a rien...</h2>
     <h3>Mais tu peux rester si tu veux.</h3>
     <h4>Clique en dessous</h4>
@@ -28,19 +30,47 @@
     <br>
     <br>
     <h2 id="voiciunpfc">Voici un pierre feuille ciseaux :</h2>
-        <script src="scripts/shifumi.js"></script>
-    <g><h3 id="sccorre">Score : <span id="score">Toi : 0; Robot : 0</span></h3></g>
+    <script src="scripts/shifumi.js"></script>
+    <g>
+        <h3 id="sccorre">Score : <span id="score">Toi : 0; Robot : 0</span></h3>
+    </g>
     <div class="boxpfc">
-    <button id="Stone" onclick="Play(1)">Pierre</button>
-    <button id="Paper" onclick="Play(2)">Papier</button>
-    <button id="Shears" onclick="Play(3)">Ciseaux</button>
+        <button id="Stone" onclick="Play(1)">Pierre</button>
+        <button id="Paper" onclick="Play(2)">Papier</button>
+        <button id="Shears" onclick="Play(3)">Ciseaux</button>
     </div>
     <p id="scorre">Jeu : <span id="robot">Pas encore de parties jouées.</span></p>
-    <br><br><br>
-    <div id="clicker"><h2>Voici un jeu idle clicker :</h2></div>
-    <h3>Z : <span id="clickernb">0</span> (+<span id="clickernbs">0</span>/s)</h3>
-    <div id="clicker"><img src="images/Pdp v2.png" height="140px" width="140px" onclick="Clicker()"></div>
+    <br>
+    <br>
+    <br>
+    <div id="clicker">
+        <h2>Voici un jeu idle clicker :</h2>
+    </div>
+    <h3 style="text-align: center;">Z : <span id="clickernb">0</span> (+<span id="clickernbs">0</span>/s)</h3>
+    <div id="clickerb">
+        <button id="clickerbutton" onclick="Clicker()"></button>
+    </div>
+    <br>
+    <div id="shopt">
+    <h2 id="boutik">Boutique</h2>
+        <div id="shop">
+            <div id="buildings">
+                <h3>Constructions</h3>
+                <div id="esclcontainer">
+                    <button  id="escl" onclick="esclb()"><span id="esclco">10</span></button>
+                    <label for="escl" onclick="esclb()">Acheter un escl- employé (+0.1 Z/s)<br>Possédé : <span id="pescl">0</span></label>
+                </div>
+            </div>
+            <div id="upgrades">
+                <h3>Améliorations</h3>
+                <div id="dccontainer">
+                    <button id="dc" onclick="dcb()" style="display:block"><span id="dcco">100</span></button>
+                    <label for="dc" id="dcl" style="display:block" onclick="dcb()">Acheter une super-souris (+1 Z/clic)</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="scripts/clicker.js"></script>
-<a href="https://88.167.249.137:45737">Nouvelle ip du site ici<a>
+    <script src="scripts/bgcolor.js"></script>
 </body>
 </html>
