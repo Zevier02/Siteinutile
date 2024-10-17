@@ -13,9 +13,9 @@ function Clicker(){
 }
 
 function gain(){
-    if(Math.floor(zsec/1000) != zsec/1000){
-        z+=Math.floor(zsec/1000)
-        reste += zsec/1000-Math.floor(zsec/1000)
+    if(Math.floor(zsec/100) != zsec/100){
+        z+=Math.floor(zsec/100)
+        reste += zsec/100-Math.floor(zsec/100)
         while(reste > 1){
             z++
             reste-=1
@@ -26,7 +26,7 @@ function gain(){
     }
     document.getElementById('clickernb').innerHTML = z
 }
-setInterval(gain, 1)
+setInterval(gain, 10)
 
 function esclb(){
     if(z>=esclco){
