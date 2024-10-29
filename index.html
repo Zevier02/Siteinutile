@@ -43,37 +43,39 @@
     <br>
     <br>
     <br>
-    <div id="clicker">
-        <h2>Voici un jeu idle clicker :</h2>
-    </div>
-    <h3 style="text-align: center;">Z : <span id="clickernb">0</span> (+<span id="clickernbs">0</span>/s)</h3>
-    <div id="clickerb">
-        <button id="clickerbutton" onclick="Clicker()"></button>
-    </div>
-    <br>
-    <div id="shopt">
-    <h2 id="boutik">Boutique</h2>
-        <div id="shop">
-            <div id="buildings">
-                <h3>Constructions</h3>
-                <div id="esclcontainer">
-                    <button  id="escl" onclick="esclb()"><span id="esclco">10</span></button>
-                    <label for="escl" onclick="esclb()">Acheter un escl- employé (+<span id="gescl">0.1</span> Z/s)<br>Possédé : <span id="pescl">0</span></label>
+    <div id="clickergame">
+        <div id="clicker">
+            <h2>Voici un jeu idle clicker :</h2>
+        </div>
+        <h3 style="text-align: center;">Z : <span id="clickernb">0</span> (+<span id="clickernbs">0</span>/s)</h3>
+        <div id="clickerb">
+            <button id="clickerbutton" onclick="Clicker()"></button>
+        </div>
+        <br>
+        <div id="shopt">
+        <h2 id="boutik">Boutique</h2>
+            <div id="shop">
+                <div id="buildings">
+                    <h3 id="buildtitle">Constructions</h3>
+                    <div id="esclcontainer">
+                        <button  id="escl" onclick="esclb()"><span id="esclco">10</span></button>
+                        <label for="escl" onclick="esclb()">Acheter un escl- employé (+<span id="gescl">0.1</span> Z/s)<br>Possédé : <span id="pescl">0</span></label>
+                    </div>
+                    <div id="stagcontainer">
+                        <button  id="stag" onclick="stagb()"><span id="stagco">100</span></button>
+                        <label for="stag" onclick="stagb()">Acheter un stagiaire (+0.5 Z/s)<br>Possédé : <span id="pstag">0</span></label>
+                    </div>
                 </div>
-                <div id="stagcontainer">
-                    <button  id="stag" onclick="stagb()"><span id="stagco">100</span></button>
-                    <label for="stag" onclick="stagb()">Acheter un stagiaire (+0.5 Z/s)<br>Possédé : <span id="pstag">0</span></label>
-                </div>
-            </div>
-            <div id="upgrades">
-                <h3>Améliorations</h3>
-                <div id="dccontainer">
-                    <button id="dc" onclick="dcb()" style="display:block"><span id="dcco">100</span></button>
-                    <label for="dc" id="dcl" style="display:block" onclick="dcb()">Acheter une super-souris (+1 Z/clic)</label>
-                </div>
-                <div id="foucontainer">
-                    <button id="fou" onclick="foub()" style="display:none"><span id="fouco">500</span></button>
-                    <label for="fou" id="foul" style="display:none" onclick="foub()">Acheter un foue- une augmentation (+0.1 Z/s par escl- employé)</label>
+                <div id="upgrades">
+                    <h3 id="uptitle">Améliorations</h3>
+                    <div id="dccontainer">
+                        <button id="dc" onclick="dcb()" style="display:block"><span id="dcco">100</span></button>
+                        <label for="dc" id="dcl" style="display:block" onclick="dcb()">Acheter une super-souris (+1 Z/clic)</label>
+                    </div>
+                    <div id="foucontainer">
+                        <button id="fou" onclick="foub()" style="display:none"><span id="fouco">500</span></button>
+                        <label for="fou" id="foul" style="display:none" onclick="foub()">Acheter un foue- une augmentation (+0.1 Z/s par escl- employé)</label>
+                    </div>
                 </div>
             </div>
         </div>

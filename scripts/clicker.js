@@ -1,18 +1,20 @@
 var z = 0
 var zsec = 0
 var esclco = 10
-var resclco = 10
+const resclco = 10
 var reste = 0
 var clickerpower = 1
 var dcco = 100
 var pescl = 0
 var stagco = 100
-var rstagco = 100
+const rstagco = 100
 var pstag = 0
 var gescl = 0.1
 var gstag = 0.5
 var foua = false
 var fouco = 500
+var fstag = 0
+var feslc = 0
 
 function Clicker(){
     z+=clickerpower
@@ -40,8 +42,7 @@ function esclb(){
         z-=esclco
         pescl++
         zsec=(zsec*10+gescl*10)/10
-        esclco = Math.floor((resclco*12)/10)
-        resclco = (resclco*12)/10
+        esclco = Math.floor((resclco*Math.pow(1.15, pescl-feslc)*100)/100)
         document.getElementById('clickernbs').innerHTML = zsec
         document.getElementById('esclco').innerHTML = esclco
         document.getElementById('clickernb').innerHTML = z
@@ -58,7 +59,7 @@ function stagb(){
         z-=stagco
         pstag++
         zsec=(zsec*10+gstag*10)/10
-        stagco = Math.floor((rstagco*12)/10)
+        stagco = Math.floor((rstagco*Math.pow(1.15, pstag-fstag)*100)/100)
         rstagco = (rstagco*12)/10
         document.getElementById('clickernbs').innerHTML = zsec
         document.getElementById('stagco').innerHTML = stagco
@@ -79,7 +80,7 @@ function foub(){
     if(z>=fouco){
         z-=fouco
         gescl+=0.1
-        zsec = (gescl*pescl*100 + gstag*pstag*100)/100
+        zsec = (gescl*pescl*10 + gstag*pstag*10)/10
         document.getElementById("fou").style.display = "none"
         document.getElementById("foul").style.display = "none"
         document.getElementById("gescl").innerHTML = gescl

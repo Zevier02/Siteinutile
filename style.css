@@ -1,4 +1,13 @@
 #shopt{
+    border: 3mm ridge;
+    position: relative;
+    margin:5% auto 0;
+    margin-bottom: 1%;
+    width: 90%;
+
+}
+
+#clickergame {
     border: 4mm ridge;
 }
 
@@ -59,7 +68,7 @@ body{
 #dc{
     background: url('images/mouse.png');
     height:50px;
-    width: 50px;
+    width:50px;
 }
 
 #clickerbutton{
@@ -79,13 +88,27 @@ body{
 }
 
 #buildings{
-    margin-right: auto;
     border: 2mm ridge;
+    position: relative;
+    margin:5% auto 0;
+    right:2%;
+    margin-bottom: 1%;
+    width: 40%;
+    padding: 0.5%;
 }
 
 #upgrades{
-    margin-left: auto;
     border: 2mm ridge;
+    position: relative;
+    margin:5% auto 0;
+    margin-bottom: 1%;
+    left:2%;
+    width: 40%;
+    padding: 0.5%;
+}
+
+#uptitle, #buildtitle {
+    text-align: center;
 }
 
 #clicker{
