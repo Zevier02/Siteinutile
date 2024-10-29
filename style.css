@@ -2,8 +2,14 @@
     border: 4mm ridge;
 }
 
-#dc, #escl{
-    color: white;
+#dc, #escl, #stag, #fou{
+    font-weight: bold;
+    color: black;
+    text-shadow:
+    1px 1px 0 white,
+    -1px 1px 0 white,
+    -1px -1px 0 white,
+    1px -1px 0 white;
 }
 
 #clickerb{
@@ -16,11 +22,29 @@
     width: 50px;
 }
 
+#stag{
+    background: url('images/stagiaire.png');
+    height:50px;
+    width: 50px;
+}
+
+#fou{
+    background: url('images/fou.png');
+    height:50px;
+    width: 50px;
+}
+
 body{
     font-family: sans-serif;
 }
 
 #esclcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#stagcontainer{
     display: flex;
     flex-direction: row;
     align-items: center;

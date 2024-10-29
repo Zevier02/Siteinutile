@@ -32,7 +32,7 @@
     <h2 id="voiciunpfc">Voici un pierre feuille ciseaux :</h2>
     <script src="scripts/shifumi.js"></script>
     <g>
-        <h3 id="sccorre">Score : <span id="score">Toi : 0; Robot : 0</span></h3>
+        <h3 id="sccorre">Score : <span id="score">Toi : 0<br>Robot : 0</span></h3>
     </g>
     <div class="boxpfc">
         <button id="Stone" onclick="Play(1)">Pierre</button>
@@ -58,7 +58,11 @@
                 <h3>Constructions</h3>
                 <div id="esclcontainer">
                     <button  id="escl" onclick="esclb()"><span id="esclco">10</span></button>
-                    <label for="escl" onclick="esclb()">Acheter un escl- employé (+0.1 Z/s)<br>Possédé : <span id="pescl">0</span></label>
+                    <label for="escl" onclick="esclb()">Acheter un escl- employé (+<span id="gescl">0.1</span> Z/s)<br>Possédé : <span id="pescl">0</span></label>
+                </div>
+                <div id="stagcontainer">
+                    <button  id="stag" onclick="stagb()"><span id="stagco">100</span></button>
+                    <label for="stag" onclick="stagb()">Acheter un stagiaire (+0.5 Z/s)<br>Possédé : <span id="pstag">0</span></label>
                 </div>
             </div>
             <div id="upgrades">
@@ -66,6 +70,10 @@
                 <div id="dccontainer">
                     <button id="dc" onclick="dcb()" style="display:block"><span id="dcco">100</span></button>
                     <label for="dc" id="dcl" style="display:block" onclick="dcb()">Acheter une super-souris (+1 Z/clic)</label>
+                </div>
+                <div id="foucontainer">
+                    <button id="fou" onclick="foub()" style="display:none"><span id="fouco">500</span></button>
+                    <label for="fou" id="foul" style="display:none" onclick="foub()">Acheter un foue- une augmentation (+0.1 Z/s par escl- employé)</label>
                 </div>
             </div>
         </div>
