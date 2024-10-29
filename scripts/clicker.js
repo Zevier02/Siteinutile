@@ -60,7 +60,6 @@ function stagb(){
         pstag++
         zsec=(zsec*10+gstag*10)/10
         stagco = Math.floor((rstagco*Math.pow(1.15, pstag-fstag)*100)/100)
-        rstagco = (rstagco*12)/10
         document.getElementById('clickernbs').innerHTML = zsec
         document.getElementById('stagco').innerHTML = stagco
         document.getElementById('clickernb').innerHTML = z
